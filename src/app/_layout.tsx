@@ -10,13 +10,13 @@ import {
 import { Loading } from "@/components/loading";
 
 export default function _layout() {
-    const [fontLoader] = useFonts({
+    const [fontsLoaded] = useFonts({
         Inter_400Regular,
         Inter_500Medium,
         Inter_600SemiBold,
         Inter_700Bold,
     });
-    if (!fontLoader) {
+    if (!fontsLoaded) {
         return <Loading />;
     }
     return (
